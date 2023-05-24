@@ -1,0 +1,10 @@
+// Create your own map
+$custom-colors: (
+  "custom-lightgrey": rgb(191, 187, 192),
+  "custom-infoL": rgb(92, 209, 220),
+  "custom-yell": rgb(255, 208, 0),
+ );
+$colors: map-merge($colors, $custom-colors);
+// @debug $colors;
+$theme-colors: map-merge($theme-colors, $custom-colors);
+// @debug $theme-colors;

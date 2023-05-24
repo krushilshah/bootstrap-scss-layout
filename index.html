@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+    <title>layout Bootstrap Scss</title>
+</head>
+
+<body>
+
+       <!-- -------------nav-bar ----------- -->
+    <div class="container-fluid bg-primary  ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand     " href="#"><i class="bi bi-alipay"></i> App Name</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active   " aria-current="page" href="#hero">To the top</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#description">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#trailers">Trailer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#sliders">Showcase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#plan">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " href="#review">Reviews</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+    <!-- -------------header  ----------- -->
+    <header class="hero" id="hero">
+        <div class="container-fluid   text-bg-custom-lightgrey ">
+            <div class="container ">
+                <div class="text-center py-4 ">
+
+                    <h5 class=" display-5 fs-1 text-primary my-2"> APP NAME </h5>
+                    <p class=" text-white display-5 fs-2 ">Lorem ipsum Dolor</p>
+                    <div class="my-2">
+                        <small class="text-white fs-6 display-5  ">Lorem ipsum dolor sit amet consectetur, adipisicing elit?
+                        </small> <br> 
+                        <small class="text-white fs-6 display-5 ">Lorem ipsum dolor sit amet ? 
+                        </small>  
+                    </div>
+                    <b class="text-white">Download Now on:</b> <br>
+                    <div class="my-2">
+                        <button type="button" class="btn btn-primary btn-sm  "><i class="bi bi-apple"></i> App
+                            store</button>
+                        <button type="button" class="btn btn-primary btn-sm  "><i class="bi bi-google-play"></i>
+                            Google Play</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- ----------------sections container-------------- -->
+    <div class="container my-2">
+        <section class="App-Name my-3" id="description">
+            <div>
+                <h5 class="display-5 fs-1  text-center"> What is App Name?</h5>
+                <small class="fs-6 "> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius esse ad culpa cum
+                    officiis corrupti, adipisci hic velit alias tempora obcaecati laboriosam quas sapiente, praesentium,
+                    dolorem eaque cupiditate aut aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </small> <br> <br>
+                <small class="fs-6">Quo dolore, earum asperiores ex culpa, esse ipsa possimus illo nobis assumenda
+                    sapiente hic
+                    expedita
+                    eaque nulla sunt, est illum. Assumenda, quae</small>
+            </div>
+        </section>
+        <section class="trailer my-3" id="trailers">
+            <div class="text-center">
+                <h5 class="display-5 fs-1  ">App Name Trailer</h5>
+                <small class="fs-6">Quo dolore, earum asperiores ex culp </small>
+            </div>
+            <div class="ratio ratio-16x9 my-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l1EssrLxt7E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="Slider my-3" id="sliders">
+            <div class="text-center">
+                <h5 class="display-5 fs-1  ">App Name in Action</h5>
+                <small class="fs-6">Quo dolore, earum asperiores ex culp </small>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/image/layout5imgslider.jpg"
+                            class="d-block w-100" alt="img">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/layout5imgslider.jpg"
+                            class="d-block w-100" alt="img">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/layout5imgslider.jpg"
+                            class="d-block w-100" alt="img">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <section class="features my-3" id="features">
+            <div class="text-center">
+                <h5 class="display-5 fs-1 "> Features</h5>
+            </div>
+            <div class="row  ">
+                <div class="col-12 col-lg-3 col-sm-6  ">
+                    <div class="card text-center border-0">
+                        <div class="card-body">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-brush-fill text-info" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Feature Heading</h5>
+                            <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info text-light">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6 ">
+                    <div class="card text-center border-0">
+                        <div class="card-body">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-camera-video-fill text-info" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Feature Heading</h5>
+                            <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info text-light">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6 ">
+                    <div class="card text-center border-0">
+                        <div class="card-body">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-instagram text-info" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Feature Heading</h5>
+                            <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info text-light">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6 ">
+                    <div class="card text-center border-0">
+                        <div class="card-body">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-phone-fill text-info" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title">Feature Heading</h5>
+                            <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info text-light">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="PlanChoose my-3" id="plan">
+            <h5 class="display-5 fs-1 text-center mt-2">Choose Your Plan</h5>
+            <div class="row my-5">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="card  mb-3 text-center   rounded-top border-0">
+                        <div class="card-header text-bg-success   border-0"> <span class="fs-4 ">Starter</span> <br>
+                            Free
+                        </div>
+                        <div class="card-body list-group p-0 border-0 rounded-0">
+
+                            <a  class="list-group-item list-group-item-action border-1 disabled"> Tempolorbus
+                                dolor official nemo</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-brush-fill"></i> Item Description</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-instagram"></i> Item Description</a>
+                        </div>
+                        <div class="card-footer border-1 ">
+                           <a href="#"> <button type="button" class="btn btn-success rounded-1">Select plan</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="card  mb-3 text-center   rounded-top border-0">
+                        <div class="card-header text-bg-custom-yell  text-white  border-0"> <span
+                                class="fs-4 ">Semi-pro</span> <br> $ 1.99 / month
+                        </div>
+                        <div class="card-body list-group p-0 border-0 rounded-0">
+
+                            <a  class="list-group-item list-group-item-action border-1 disabled"> Tempolorbus
+                                dolor official nemo</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-brush-fill"></i> Item Description</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-instagram"></i> Item Description</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-gear-wide-connected"></i> Item Description</a>
+                        </div>
+                        <div class="card-footer border-1 ">
+                           <a href="#"> <button type="button" class="btn btn-custom-yell  rounded-1">Select plan</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4 col-sm-6 offset-sm-3 offset-md-0">
+                    <div class="card  mb-3 text-center   rounded-top border-0">
+                        <div class="card-header text-bg-danger  text-white  border-0"> <span class="fs-4 ">Pro</span>
+                            <br> $ 4.99 / month
+                        </div>
+                        <div class="card-body list-group p-0 border-0 rounded-0">
+
+                            <a  class="list-group-item list-group-item-action border-1 disabled"> Tempolorbus
+                                dolor official nemo</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-brush-fill"></i> Item Description</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-instagram"></i> Item Description</a>
+                            <a  class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-gear-wide-connected"></i> Item Description</a>
+                            <a   class="list-group-item list-group-item-action border-1"><i
+                                    class="bi bi-cloud-fill"></i>Item Description</a>
+                        </div>
+                        <div class="card-footer border-1 ">
+                           <a href="#"> <button type="button" class="btn btn-danger rounded-1 ">Select plan</button> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="Review my-3" id="review">
+            <h5 class="display-5 fs-1 text-center">Reviews</h5>
+            <div class="row">
+
+                <div class="col-12 col-lg-3 col-sm-6  ">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>"
+                                <small class="fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi molestiae
+                                    culpa ipsam incidunt similique consequuntur, non perferendis delectus dignissimos
+                                    ducimus fugiat eum. Perferendis, alias consequatur numquam illum quae eum.
+                                </small>"
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            firstname lastname (september 1) 2020 12:00
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6  ">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>"
+                                <small class="fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi molestiae
+                                    culpa ipsam incidunt similique consequuntur, non perferendis delectus dignissimos
+                                    ducimus fugiat eum. Perferendis, alias consequatur numquam illum quae eum.
+                                </small>"
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            firstname lastname (september 1) 2020 12:00
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6  ">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>"
+                                <small class="fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi molestiae
+                                    culpa ipsam incidunt similique consequuntur, non perferendis delectus dignissimos
+                                    ducimus fugiat eum. Perferendis, alias consequatur numquam illum quae eum.
+                                </small>"
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            firstname lastname (september 1) 2020 12:00
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-6  ">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>"
+                                <small class="fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi molestiae
+                                    culpa ipsam incidunt similique consequuntur, non perferendis delectus dignissimos
+                                    ducimus fugiat eum. Perferendis, alias consequatur numquam illum quae eum.
+                                </small>"
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            firstname lastname (september 1) 2020 12:00
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- -------------section feedback with container fluid------------- -->
+    <section class="feedback mt-2" id="feedback">
+    <div class="container-fluid  bg-secondary ">
+        <div class="container  ">
+                <div class=" text-center mt-4">
+                    <h5 class="display-5 fs-1 text-white my-2 ">Newsletter</h5>
+                    <p class=" text-white display-5 fs-6 my-2">Lorem ipsum Dolor Lorem ipsum Dolor</p>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder=" firstname lastname">
+                        <div class="my-3">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <small class="fs-6  text-white">I have read and accepts the <a href="#"> Terms and
+                                            conditions</a>.</small>
+                                </label>
+                            </div>
+                            <small class="text-white">You can unsubscribe from the mailing list Anytime.</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                        <a href="#"> <button type="button" class="btn btn-dark float-end mt-4 btn-sm">Sign up</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- -------------footer-------- -->
+    <footer class="container-fluid bg-light">
+        <div class="container my-2">
+            <div class="row">
+                <div class="col-12 text-center col-sm-6 col-md-3 text-md-start my-2">
+                    <p class="fs-5">Quick link</p>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"> Home</a></li>
+                        <li> <a href="#"> Whats new</a></li>
+                        <li> <a href="#"> Support</a></li>
+                        <li> <a href="#"> My Account</a></li>
+                        <li> <a href="#"> Cancle subscription</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-12 text-center col-sm-6 col-md-3 text-md-start my-2">
+                    <p class="fs-5"> Information</p>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"> About us</a></li>
+                        <li> <a href="#"> Job</a></li>
+                        <li> <a href="#"> Press info</a></li>
+                        <li> <a href="#"> Contact</a></li>
+                        <li> <a href="#"> Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center col-md-3 col-sm-6 text-md-start my-2">
+                    <p class="fs-5">Follow us</p>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"><i class="bi bi-facebook"></i> Facebook </a></li>
+                        <li>
+                            <a href="#"> <i class="bi bi-instagram"></i> Instagram </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="bi bi-twitter"></i> twitter</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="bi bi-youtube"></i> youtube </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="bi bi-linkedin"></i> Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center col-md-3 col-sm-6 text-md-start my-2">
+                    <p class="fs-5">Our Location</p>
+                    <ul class="list-unstyled">
+
+                        <li><b>App Name</b></li>
+                        <li>
+                            <p>350 , 5th Avenue,<br> New york NY 10118 </p>
+                        </li>
+                        <li><i class="bi bi-telephone-fill"></i><a href="#"> (212) 736-310</a></li>
+                        <li><i class="bi bi-inbox-fill"></i><a href="#"> info@appname.com</a></li>
+                        <li class="mt-2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-9 col-12 text-center text-md-start">     <p> &#169; 2020 APP NAME Inc , All Right Reserved <a href="#">Terms of Use and Privacy Policy</a> </p>
+                    </div>
+                    <div class="col-md-3 col-12 text-center text-md-start"><div class="dropup-center dropup">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-translate"></i> Choose Language </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Gujarati</a></li>
+                        </ul>
+                    </div></div>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
